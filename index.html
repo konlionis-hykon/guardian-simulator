@@ -4,7 +4,7 @@
 RESEARCH ARTIFACT NOTICE
 ═══════════════════════════════════════════════════════════════════════════════
 
-Guardian Protocol Simulator v0.3
+Guardian Protocol Simulator v1.0
 Conceptual decision cascade visualization for the Guardian Protocol framework.
 
 KEY LIMITATIONS:
@@ -22,7 +22,7 @@ Guardian Protocol specification available via Zenodo DOI.
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guardian Protocol Simulator v0.3</title>
+<title>Guardian Protocol Simulator v1.0</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -535,11 +535,17 @@ footer {
     <!-- HEADER -->
     <header>
         <h1>🛡️ GUARDIAN PROTOCOL SIMULATOR</h1>
-        <div class="subtitle">Real-time visualization of ethical gating &amp; decision cascade · v0.3</div>
+        <div class="subtitle">Real-time visualization of ethical gating &amp; decision cascade · v1.0</div>
         <div class="research-banner">
             ⚠️ RESEARCH VISUALIZATION ONLY — CONCEPTUAL POLICY SIMULATION — NOT A DEPLOYED SYSTEM
         </div>
     </header>
+
+    <!-- LIMITATIONS BANNER -->
+    <div style="background:rgba(79,195,247,0.06); border:1px solid rgba(79,195,247,0.25); border-left:4px solid #4fc3f7; border-radius:8px; padding:14px 20px; margin-bottom:18px; font-size:0.88em; line-height:1.75; color:#b0c4d8;">
+        <strong style="color:#4fc3f7;">Limitations &amp; Future Work —</strong>
+        This simulator presents a <strong>conceptual specification</strong> of the Guardian Protocol, not an empirically validated system. All thresholds (τ_E, τ_MBI), weight parameters (α, β, λ), and utility constants are illustrative placeholders chosen to demonstrate structural behaviour. Risk variables (r_sacred, r_coercion, r_extraction) are set manually; in deployment they would be estimated by fine-tuned classifiers. MBI is modelled as a dynamic state variable here but would require a recurrent state model updated from real interaction data. Key future work includes: dataset-driven threshold calibration using red-team corpora (e.g. AdvBench, HarmBench), uncertainty-aware thresholding, adaptive weight learning across interaction contexts, and empirical validation of recovery dynamics. The framework's core contributions — Mutual Boundary Integrity as an interaction stability metric, reflexivity invariants, and runtime governance overlay — are intended as a research foundation for this subsequent empirical work.
+    </div>
 
     <!-- TOP GRID: Controls | Gate Cascade -->
     <div class="main-grid">
@@ -937,8 +943,8 @@ footer {
     </div>
 
     <footer>
-        Guardian Protocol Simulator v0.3 — Conceptual Decision Cascade Visualization<br>
-        Kon Lionis · 2026 · Guardian Protocol specification available via Zenodo DOI
+        Guardian Protocol Simulator v1.0 — Conceptual Decision Cascade Visualization<br>
+        Kon Lionis · 2026 · <a href="https://doi.org/10.5281/zenodo.18453326" target="_blank" style="color:#4fc3f7;">Guardian Protocol specification: doi.org/10.5281/zenodo.18453326</a>
     </footer>
 
 </div>
